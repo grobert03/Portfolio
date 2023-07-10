@@ -1,11 +1,9 @@
 import { DarkModeSwitch } from "react-toggle-dark-mode";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Button from "./Button";
-import { useTranslation } from "react-i18next";
+import HeaderLink from "./HeaderLink";
 
-const Header = () => {
-  const {t, i18n} = useTranslation();
-  const [isDarkMode, setDarkMode] = useState(false);
+const Header = ({isDarkMode, setDarkMode, t, i18n}) => {
   const [isEnglish, setIsEnglish] = useState(true);
 
   const toggleDarkMode = (checked) => {
@@ -14,30 +12,22 @@ const Header = () => {
 
 
   return (
-    <header className={`py-4 px-5 font-roboto text-center ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
+    <header className={`py-4 px-5 font-roboto text-center transition ease-in-out duration-100 ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
       <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-red text-2xl font-semibold">Gaina.dev</h1>
+        <h1 className="text-2xl font-semibold">Gaina.dev</h1>
         <nav>
           <ul className="flex space-x-4 items-center">
             <li>
-              <a href="#">
-                {t('Home')}
-              </a>
+              <HeaderLink isDarkMode={isDarkMode} href="#" text={t('Home')}></HeaderLink>
             </li>
             <li>
-              <a href="#" >
-              {t('About')}
-              </a>
+              <HeaderLink isDarkMode={isDarkMode} href="#" text={t('About')}></HeaderLink>
             </li>
             <li>
-              <a href="#">
-              {t('Projects')}
-              </a>
+              <HeaderLink isDarkMode={isDarkMode} href="#" text={t('Projects')}></HeaderLink>
             </li>
             <li>
-              <a href="#">
-              {t('Contact')}
-              </a>
+              <HeaderLink isDarkMode={isDarkMode} href="#" text={t('Contact')}></HeaderLink>
             </li>
             <li>
               <DarkModeSwitch

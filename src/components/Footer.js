@@ -1,7 +1,7 @@
-const Footer = () => {
+const Footer = ({isDarkMode}) => {
   return(  
-    <div className="fixed bottom-0 w-full  bg-blue-700 text-white text-center">
-      Made by Grobert03
+    <div className={`w-full text-center transition ease-in-out duration-300 ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
+      <p>Made by Grobert03</p>
     </div>
     )
 }

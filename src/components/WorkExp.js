@@ -1,8 +1,8 @@
 const WorkExp = ({isDarkMode, t}) => {
   return (
-    <div className="flex w-3/4 m-auto flex-col gap-5 items-center justify-between">
+    <div className="flex md:w-3/4 mt-5 mx-auto flex-col  items-center justify-between">
       <h3
-        className={`text-3xl font-bold transition ease-in-out duration-300 ${
+        className={`text-3xl text-center font-bold transition ease-in-out duration-300 ${
           isDarkMode ? "text-cyan-400" : ""
         }`}
       >

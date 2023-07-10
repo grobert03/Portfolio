@@ -13,7 +13,7 @@ const App = () => {
   const {t, i18n} = useTranslation();
 
   return (
-    <div className={isDarkMode ? 'dark-mode w-full h-full' : 'light-mode w-full h-full'}>
+    <div className={isDarkMode ? 'dark-mode ' : 'light-mode'}>
       <Header t={t} i18n={i18n} isDarkMode={isDarkMode} setDarkMode={setDarkMode}></Header>
       <Card t={t} i18n={i18n} isDarkMode={isDarkMode}></Card>
       <AboutMe isDarkMode={isDarkMode} t={t}></AboutMe>

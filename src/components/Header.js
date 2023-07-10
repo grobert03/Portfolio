@@ -18,18 +18,6 @@ const Header = ({isDarkMode, setDarkMode, t, i18n}) => {
         <nav>
           <ul className="flex space-x-4 items-center">
             <li>
-              <HeaderLink isDarkMode={isDarkMode} href="#" text={t('Home')}></HeaderLink>
-            </li>
-            <li>
-              <HeaderLink isDarkMode={isDarkMode} href="#" text={t('About')}></HeaderLink>
-            </li>
-            <li>
-              <HeaderLink isDarkMode={isDarkMode} href="#" text={t('Projects')}></HeaderLink>
-            </li>
-            <li>
-              <HeaderLink isDarkMode={isDarkMode} href="#" text={t('Contact')}></HeaderLink>
-            </li>
-            <li>
               <DarkModeSwitch
                 checked={isDarkMode}
                 onChange={toggleDarkMode}

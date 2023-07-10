@@ -3,7 +3,7 @@ import {SiExpress, SiMongodb, SiMysql} from "react-icons/si";
 
 const AboutMe = ({ isDarkMode, t }) => {
   return (
-    <div className="flex w-3/4 m-auto flex-col gap-5 items-center justify-between">
+    <div className="flex w-3/4 m-auto flex-col mb-5 gap-5 items-center justify-between">
       <div className="w-full flex gap-5 justify-around">
         <h3
           className={`text-3xl font-bold transition ease-in-out duration-300 ${

@@ -16,11 +16,11 @@ const AboutMe = ({ isDarkMode, t }) => {
     <div className="flex flex-col justify-between items-center m-auto gap-10 md:w-3/4 md:flex-row md:items-start">
     <div className="flex flex-col justify-between items-center md:flex-1">
         <h3
-          className={`text-3xl font-bold transition ease-in-out  duration-300 ${
+          className={`text-3xl font-bold transition ease-in-out  duration-300 mb-4 ${
             isDarkMode ? "text-cyan-400" : ""
           }`}
         >
-          About me
+        {t("AboutMe-0")}
         </h3>
         <div className="px-4 flex-1 text-justify flex flex-col gap-5">
           <p dangerouslySetInnerHTML={{ __html: t("AboutMe-1") }}></p>
@@ -31,11 +31,11 @@ const AboutMe = ({ isDarkMode, t }) => {
       
       <div className="flex flex-col justify-between items-center md:flex-1">
         <h3
-          className={`text-3xl font-bold transition ease-in-out duration-300 ${
+          className={`text-3xl font-bold transition ease-in-out duration-300 mb-4 ${
             isDarkMode ? "text-cyan-400" : ""
           }`}
         >
-          My Tech Stack
+          {t("TechStack")}
         </h3>
         <div className="grid grid-cols-3 text-center">
           <div className=" p-4 w-full">

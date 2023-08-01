@@ -8,7 +8,7 @@ const WorkExp = ({isDarkMode, t}) => {
       >
         {t("Exp")}
       </h3>
-      <div className={`border rounded-3xl  ${isDarkMode ? "border-white" : "border-black"} p-4 w-3/4`}>
+      <div className={`border rounded-3xl  ${isDarkMode ? "border-cyan-400" : "border-black"} p-4 lg:w-1/2 w-3/4`}>
         <div className="flex gap-3 items-center">
           <img src="/logo-quality.png" alt="logo Quality Media"></img>
           <div>
@@ -16,7 +16,7 @@ const WorkExp = ({isDarkMode, t}) => {
             <div>Mar 2023 - Jun 2023</div>
           </div>
         </div>
-        <p className="text-justify">{t("quality")}</p>
+        <p className="md:text-justify" dangerouslySetInnerHTML={{ __html: t("quality") }}></p>
       </div>
     </div>
   );

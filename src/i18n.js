@@ -14,7 +14,10 @@ const resources = {
       "AboutMe-3": "If you are looking for someone with a <span class='marked'>passion</span> for programming, solid technical skills, and a growth-oriented mindset, please feel free to contact me. I am excited to collaborate on new projects and contribute to your company's success.",
       "TechStack": "My Tech Stack",
       "Exp": "Professional Experience",
-      "quality": "For 4 months, I have had the privilege of working as a Full-stack Developer at Quality Media Producciones. During my time there, I have gained practical experience by developing two applications using technologies such as Symfony, MySQL, and jQuery. I have demonstrated my ability to work in a team, adapt quickly to new environments, and provide effective solutions to technical challenges."
+      "quality": "For 4 months, I have had the privilege of working as a Full-stack Developer at Quality Media Producciones. During my time there, I have gained practical experience by developing two applications using technologies such as <span class='marked'>Symfony</span>, <span class='marked'>MySQL</span>, and <span class='marked'>jQuery</span>. I have demonstrated my ability to work in a team, adapt quickly to new environments, and provide effective solutions to technical challenges.",
+      "projects": "Projects",
+      "brandico": "Twitter clone made using Symfony, jQuery and MySQL.",
+      "cexplorer": "Country finder with information such as the current weather. Used the REST Countries and OpenWeather APIs alongside the React framework."
     }
   },
   es: {
@@ -26,7 +29,10 @@ const resources = {
       "AboutMe-3": "Si buscas a alguien con <span class='marked'>pasión</span> por la programación, habilidades técnicas sólidas y una mentalidad orientada al <span class='marked'>crecimiento</span>, no dudes en contactarme. Estoy entusiasmado por colaborar en nuevos proyectos y contribuir al éxito de tu empresa.",
       "TechStack": "Conocimientos",
       "Exp": "Experiencia Profesional",
-      "quality": "Durante 4 meses, he tenido el privilegio de trabajar como Desarrollador Full-stack en Quality Media Producciones. Allí, he adquirido experiencia práctica, desarrollando dos aplicaciones utilizando tecnologías como Symfony, MySQL y jQuery. A lo largo de mi trayectoria, he demostrado mi capacidad para trabajar en equipo, adaptarme rápidamente a nuevos entornos y aportar soluciones efectivas a los desafíos técnicos."
+      "quality": "Durante 4 meses, he tenido el privilegio de trabajar como Desarrollador Full-stack en Quality Media Producciones. Allí, he adquirido experiencia práctica, desarrollando dos aplicaciones utilizando tecnologías como <span class='marked'>Symfony</span>, <span class='marked'>MySQL</span> y <span class='marked'>jQuery</span>. A lo largo de mi trayectoria, he demostrado mi capacidad para trabajar en equipo, adaptarme rápidamente a nuevos entornos y aportar soluciones efectivas a los desafíos técnicos.",
+      "projects": "Proyectos",
+      "brandico": "Clon de Twitter desarrollado con Symfony, jQuery y MySQL.",
+      "cexplorer": "Buscador de países para consultar información como el clima actual. Utilizadas las APIs REST Countries y OpenWeather, junto al framework React."
     }
   }
 };
